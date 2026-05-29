@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travis Bricker — Technical Program Manager & Systems Architect</title>
+    <title>Travis Bricker — Program Manager & Operational Architect</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -14,11 +14,11 @@
                     colors: {
                         tech: {
                             bg: '#09090b',       /* Zinc 950 */
-                            card: '#18181b',     /* Zinc 900 */
+                            card: '#141416',     /* Zinc 900 custom */
                             border: '#27272a',   /* Zinc 800 */
                             accent: '#ff5a00',   /* Supersonic Orange */
                             accentHover: '#e04f00',
-                            accentMuted: 'rgba(255, 90, 0, 0.15)',
+                            accentMuted: 'rgba(255, 90, 0, 0.08)',
                             textMuted: '#a1a1aa' /* Zinc 400 */
                         }
                     },
@@ -30,7 +30,7 @@
             }
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -38,102 +38,97 @@
             color: #f4f4f5;
         }
         .tech-grid {
-            background-size: 40px 40px;
-            background-image: linear-gradient(to right, rgba(39, 39, 42, 0.3) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(39, 39, 42, 0.3) 1px, transparent 1px);
-        }
-        .glow-effect {
-            box-shadow: 0 0 25px -5px rgba(255, 90, 0, 0.2);
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(39, 39, 42, 0.15) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(39, 39, 42, 0.15) 1px, transparent 1px);
         }
     </style>
 </head>
 <body class="tech-grid min-h-screen selection:bg-tech-accent selection:text-white">
 
     <!-- Header Navigation -->
+    <!-- STREAMING_CHUNK: Rendering navigation header... -->
     <header class="sticky top-0 z-40 w-full border-b border-tech-border bg-tech-bg/80 backdrop-blur-md">
         <div class="mx-auto flex max-w-7xl h-16 items-center justify-between px-6 lg:px-8">
             <div class="flex items-center space-x-3">
-                <span class="h-3 w-3 rounded-full bg-tech-accent animate-pulse"></span>
-                <a href="#" class="font-mono text-sm font-bold tracking-wider hover:text-tech-accent transition-colors">T.BRICKER // SYSTEMS.OPS</a>
+                <span class="h-2 w-2 rounded-full bg-tech-accent"></span>
+                <a href="#" class="font-semibold text-sm tracking-wide hover:text-tech-accent transition-colors">Travis Bricker</a>
             </div>
-            <nav class="hidden md:flex space-x-8 font-mono text-xs tracking-widest text-tech-textMuted">
-                <a href="#vitals" class="hover:text-white transition-colors">/01_VITALS</a>
-                <a href="#projects" class="hover:text-white transition-colors">/02_PORTFOLIO</a>
-                <a href="#philosophy" class="hover:text-white transition-colors">/03_PHILOSOPHY</a>
-                <a href="#experience" class="hover:text-white transition-colors">/04_EXPERIENCE</a>
+            <nav class="hidden md:flex space-x-8 text-xs font-medium tracking-wide text-tech-textMuted">
+                <a href="#vitals" class="hover:text-white transition-colors">Performance Metrics</a>
+                <a href="#projects" class="hover:text-white transition-colors">Case Studies</a>
+                <a href="#experience" class="hover:text-white transition-colors">Background</a>
             </nav>
             <div>
-                <a href="#contact" class="border border-tech-accent/40 bg-tech-accentMuted hover:bg-tech-accent hover:text-white transition-all duration-300 px-4 py-2 text-xs font-mono tracking-widest uppercase rounded">
-                    Initialize Contact
+                <a href="#contact" class="border border-tech-accent/30 bg-tech-accentMuted hover:bg-tech-accent hover:text-white transition-all duration-300 px-4 py-2 text-xs font-semibold tracking-wide rounded">
+                    Get in Touch
                 </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24 border-b border-tech-border">
+    <!-- STREAMING_CHUNK: Displaying hero block and core intro statement... -->
+    <section class="relative overflow-hidden pt-20 pb-16 md:pt-28 md:pb-24 border-b border-tech-border">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
             <div class="max-w-3xl">
-                <!-- Regulated High Stakes Tag -->
-                <div class="inline-flex items-center space-x-2 border border-tech-border bg-tech-card px-3 py-1 rounded mb-6 font-mono text-xs text-tech-accent">
-                    <span class="flex h-2 w-2 rounded-full bg-tech-accent"></span>
-                    <span>MISSION CLASS: REGULATED EXTREME-SCALE AUTOMATION</span>
+                <!-- Human Professional Position Tag -->
+                <div class="inline-flex items-center space-x-2 border border-tech-border bg-tech-card px-3 py-1.5 rounded-full mb-6 text-xs text-tech-accent">
+                    <span class="flex h-1.5 w-1.5 rounded-full bg-tech-accent"></span>
+                    <span class="font-medium">Program Manager & Operations Architect</span>
                 </div>
                 
-                <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
-                    Architecting the Operating Systems of <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-tech-accent">Scale.</span>
+                <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+                    I build operational infrastructure that allows teams to <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-tech-accent">scale.</span>
                 </h1>
                 
-                <p class="mt-6 text-lg leading-8 text-tech-textMuted">
-                    Technical Program Manager & Systems Architect specializing in transforming fractured, manual, and highly-regulated workflows into audited, AI-orchestrated platform primitives. De-risking multi-million dollar operations through data infrastructure and rigorous automation pipelines.
+                <p class="mt-6 text-base md:text-lg leading-relaxed text-tech-textMuted">
+                    Seeking strategic roles in Program Management and Operations at mission oriented companies in hard and deep tech industries that will reindustrialize America. I drive to bridge the gap between complex software systems and real-world business demands and turning fragmented, highly regulated manual workflows into structured, automated, and audited operations.
                 </p>
 
-                <!-- Command Prompt Actions -->
-                <div class="mt-10 flex flex-wrap gap-4 font-mono text-xs">
-                    <a href="#projects" class="glow-effect flex items-center justify-center bg-tech-accent hover:bg-tech-accentHover text-white px-6 py-4 rounded font-bold tracking-wider transition-all duration-300 w-full sm:w-auto">
-                        EXECUTE --EXPLORE-PROJECTS
+                <!-- Clean, human CTAs -->
+                <div class="mt-10 flex flex-wrap gap-4 text-xs font-semibold tracking-wide">
+                    <a href="#projects" class="flex items-center justify-center bg-tech-accent hover:bg-tech-accentHover text-white px-6 py-3.5 rounded transition-all duration-300 w-full sm:w-auto">
+                        Explore My Case Studies
                     </a>
-                    <a href="mailto:trvsbricker@gmail.com" class="flex items-center justify-center border border-tech-border bg-tech-card hover:border-zinc-500 text-zinc-300 hover:text-white px-6 py-4 rounded tracking-wider transition-all duration-300 w-full sm:w-auto">
-                        curl -d "collab_request" trvsbricker@gmail.com
+                    <a href="mailto:trvsbricker@gmail.com" class="flex items-center justify-center border border-tech-border bg-tech-card hover:border-zinc-500 text-zinc-300 hover:text-white px-6 py-3.5 rounded transition-all duration-300 w-full sm:w-auto">
+                        Send me an Email
                     </a>
                 </div>
             </div>
         </div>
-        <!-- Abstract Tech Grid Lines overlay -->
         <div class="absolute inset-0 pointer-events-none opacity-20 bg-gradient-to-t from-tech-bg via-transparent to-transparent"></div>
     </section>
 
     <!-- Telemetry & Vitals Metrics Section -->
+    <!-- STREAMING_CHUNK: Populating telemetry performance grids... -->
     <section id="vitals" class="py-12 border-b border-tech-border bg-tech-card/30">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 font-mono">
+            <p class="text-xs font-semibold uppercase tracking-wider text-tech-accent mb-6">Key Career Benchmarks</p>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
                 
-                <div class="border border-tech-border bg-tech-card/80 p-6 rounded relative overflow-hidden group hover:border-tech-accent/40 transition-colors duration-300">
-                    <p class="text-xs text-tech-textMuted tracking-wider uppercase mb-1">// SYSTEM SAVINGS</p>
+                <div class="border border-tech-border bg-tech-card p-6 rounded hover:border-tech-accent/30 transition-colors duration-300">
+                    <p class="text-xs font-semibold text-tech-textMuted tracking-wider uppercase mb-1">Financial Impact</p>
                     <p class="text-3xl font-bold text-white">$5.0M+</p>
-                    <p class="text-xs text-tech-accent mt-2">Targeted annual Outside Counsel savings pathway</p>
-                    <div class="absolute bottom-0 right-0 opacity-5 text-8xl font-bold tracking-tighter select-none pointer-events-none">$$</div>
+                    <p class="text-xs text-tech-textMuted mt-2">Targeted annual outside spend savings identified & implemented</p>
                 </div>
 
-                <div class="border border-tech-border bg-tech-card/80 p-6 rounded relative overflow-hidden group hover:border-tech-accent/40 transition-colors duration-300">
-                    <p class="text-xs text-tech-textMuted tracking-wider uppercase mb-1">// AUTOMATED LOAD</p>
-                    <p class="text-3xl font-bold text-white">~50k</p>
-                    <p class="text-xs text-tech-accent mt-2">Regulated requests/year processed via platform</p>
-                    <div class="absolute bottom-0 right-0 opacity-5 text-8xl font-bold tracking-tighter select-none pointer-events-none">REQ</div>
+                <div class="border border-tech-border bg-tech-card p-6 rounded hover:border-tech-accent/30 transition-colors duration-300">
+                    <p class="text-xs font-semibold text-tech-textMuted tracking-wider uppercase mb-1">Operational Scale</p>
+                    <p class="text-3xl font-bold text-white">~30k</p>
+                    <p class="text-xs text-tech-textMuted mt-2">Third party responses enhanced with automation per year</p>
                 </div>
 
-                <div class="border border-tech-border bg-tech-card/80 p-6 rounded relative overflow-hidden group hover:border-tech-accent/40 transition-colors duration-300">
-                    <p class="text-xs text-tech-textMuted tracking-wider uppercase mb-1">// TIMELINE COMPRESSION</p>
-                    <p class="text-3xl font-bold text-white">60%</p>
-                    <p class="text-xs text-tech-accent mt-2">Timeline reduction on 100-day replacement build</p>
-                    <div class="absolute bottom-0 right-0 opacity-5 text-8xl font-bold tracking-tighter select-none pointer-events-none">TIME</div>
+                <div class="border border-tech-border bg-tech-card p-6 rounded hover:border-tech-accent/30 transition-colors duration-300">
+                    <p class="text-xs font-semibold text-tech-textMuted tracking-wider uppercase mb-1">Time Savings</p>
+                    <p class="text-3xl font-bold text-white">10,000+</p>
+                    <p class="text-xs text-tech-textMuted mt-2">Hours saved for the Legal team across portfolio projects</p>
                 </div>
 
-                <div class="border border-tech-border bg-tech-card/80 p-6 rounded relative overflow-hidden group hover:border-tech-accent/40 transition-colors duration-300">
-                    <p class="text-xs text-tech-textMuted tracking-wider uppercase mb-1">// DIRECT RECOVERY</p>
-                    <p class="text-3xl font-bold text-white">$660K</p>
-                    <p class="text-xs text-tech-accent mt-2">Recovered in single Invoice Remediation cycle</p>
-                    <div class="absolute bottom-0 right-0 opacity-5 text-8xl font-bold tracking-tighter select-none pointer-events-none">RECV</div>
+                <div class="border border-tech-border bg-tech-card p-6 rounded hover:border-tech-accent/30 transition-colors duration-300">
+                    <p class="text-xs font-semibold text-tech-textMuted tracking-wider uppercase mb-1">Agent Building</p>
+                    <p class="text-3xl font-bold text-white">10+</p>
+                    <p class="text-xs text-tech-textMuted mt-2">Agents built across Claude Code, N8N, and LibreChat</p>
                 </div>
 
             </div>
@@ -141,226 +136,189 @@
     </section>
 
     <!-- Main Interactive Project Hub -->
+    <!-- STREAMING_CHUNK: Setting up interactive filters for project selection... -->
     <section id="projects" class="py-20 border-b border-tech-border">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12">
                 <div>
-                    <p class="font-mono text-xs text-tech-accent tracking-widest">// SECURE_ARCHIVES_FILE_STORE</p>
-                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mt-2">Engineered Case Studies</h2>
+                    <p class="text-xs font-semibold text-tech-accent uppercase tracking-wider">Project Portfolio</p>
+                    <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl mt-1">Structured Case Studies</h2>
                 </div>
-                <!-- Interactive Filter Controls -->
-                <div class="mt-6 md:mt-0 flex flex-wrap gap-2 font-mono text-xs">
-                    <button onclick="filterProjects('all')" id="filter-all" class="filter-btn active-filter px-4 py-2 border rounded tracking-wider uppercase transition-all duration-300 border-tech-accent bg-tech-accent text-white">
-                        ALL_PROJECTS
+                <!-- Clean, non-code filter buttons -->
+                <div class="mt-6 lg:mt-0 flex flex-wrap gap-2 text-xs font-medium">
+                    <button onclick="filterProjects('all')" id="filter-all" class="filter-btn active-filter px-4 py-2 border rounded transition-all duration-300 border-tech-accent bg-tech-accent text-white">
+                        All Projects
                     </button>
-                    <button onclick="filterProjects('ai')" id="filter-ai" class="filter-btn px-4 py-2 border rounded tracking-wider uppercase transition-all duration-300 border-tech-border text-tech-textMuted hover:border-zinc-500 hover:text-white">
-                        AI_ORCHESTRATION
+                    <button onclick="filterProjects('ai')" id="filter-ai" class="filter-btn px-4 py-2 border rounded transition-all duration-300 border-tech-border text-tech-textMuted hover:border-zinc-500 hover:text-white">
+                        AI & Automation
                     </button>
-                    <button onclick="filterProjects('platform')" id="filter-platform" class="filter-btn px-4 py-2 border rounded tracking-wider uppercase transition-all duration-300 border-tech-border text-tech-textMuted hover:border-zinc-500 hover:text-white">
-                        ENTERPRISE_PLATFORMS
+                    <button onclick="filterProjects('platform')" id="filter-platform" class="filter-btn px-4 py-2 border rounded transition-all duration-300 border-tech-border text-tech-textMuted hover:border-zinc-500 hover:text-white">
+                        Platform Migrations
                     </button>
-                    <button onclick="filterProjects('data')" id="filter-data" class="filter-btn px-4 py-2 border rounded tracking-wider uppercase transition-all duration-300 border-tech-border text-tech-textMuted hover:border-zinc-500 hover:text-white">
-                        DATA_INFRASTRUCTURE
+                    <button onclick="filterProjects('data')" id="filter-data" class="filter-btn px-4 py-2 border rounded transition-all duration-300 border-tech-border text-tech-textMuted hover:border-zinc-500 hover:text-white">
+                        Data Infrastructure
                     </button>
                 </div>
             </div>
 
             <!-- Project Cards Grid -->
+            <!-- STREAMING_CHUNK: Injecting filterable project portfolio cards... -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="project-container">
 
                 <!-- Case Study 1 (AI / Platform) -->
-                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/50 transition-all duration-300" data-category="ai platform">
+                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/40 transition-all duration-300" data-category="ai platform">
                     <div>
-                        <div class="flex items-center justify-between font-mono text-xs text-tech-textMuted mb-4">
-                            <span>[ PHASED AUTOMATION ]</span>
-                            <span class="text-tech-accent">HERO_PROJECT</span>
+                        <div class="flex items-center justify-between text-xs text-tech-textMuted mb-4">
+                            <span class="uppercase tracking-wider font-medium">Workflow Automation</span>
+                            <span class="text-tech-accent font-semibold">Featured</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-tech-accent transition-colors duration-300">Multi-Year AI & Workflow Platform</h3>
+                        <h3 class="text-lg font-bold text-white group-hover:text-tech-accent transition-colors duration-300">Multi-Year AI & Workflow Platform</h3>
                         <p class="text-sm text-tech-textMuted mt-3 line-clamp-3">
-                            Designed and deployed a 4-phase program automating ~50,000 highly regulated, fragmented external requests per year across 17 downstream teams. Built on an enterprise integration engine backed by an agentic routing and structured extraction layer.
+                            Designed and deployed a 4-phase program to drive automation to respond to ~30,000 regulated external intake requests per year across 17 downstream teams. Built on an enterprise integration engine backed by structured routing and extraction layers.
                         </p>
-                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-[10px]">
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Workato</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">LibreChat</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">MCP Servers</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Snowflake</span>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Integration Middleware</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">LLMs</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Data Architecture</span>
                         </div>
                     </div>
-                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between font-mono text-xs">
-                        <span class="text-tech-textMuted">SAVED 5,750+ HR/YR PATH</span>
-                        <button onclick="openModal('modal-ai-platform')" class="text-tech-accent group-hover:underline font-bold flex items-center space-x-1">
-                            <span>LAUNCH_DOC</span>
+                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between text-xs font-semibold">
+                        <span class="text-tech-textMuted">5,750+ Hrs Saved Yearly</span>
+                        <button onclick="openModal('modal-ai-platform')" class="text-tech-accent group-hover:underline flex items-center space-x-1">
+                            <span>Read Case Study</span>
                             <span>&rarr;</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Case Study 2 (Platform) -->
-                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/50 transition-all duration-300" data-category="platform">
+                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/40 transition-all duration-300" data-category="platform">
                     <div>
-                        <div class="flex items-center justify-between font-mono text-xs text-tech-textMuted mb-4">
-                            <span>[ CONTRACT LIFECYCLE ]</span>
-                            <span class="text-tech-accent">HERO_PROJECT</span>
+                        <div class="flex items-center justify-between text-xs text-tech-textMuted mb-4">
+                            <span class="uppercase tracking-wider font-medium">Enterprise Software</span>
+                            <span class="text-tech-accent font-semibold">Featured</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-tech-accent transition-colors duration-300">100-Day Enterprise Platform Replacement</h3>
+                        <h3 class="text-lg font-bold text-white group-hover:text-tech-accent transition-colors duration-300">100-Day Enterprise Platform Replacement</h3>
                         <p class="text-sm text-tech-textMuted mt-3 line-clamp-3">
-                            Led the contract negotiation and rapid replacement of a legacy enterprise e-billing/matter management system in 100 days contractually, executing a 60% timeline compression to unlock $5.0M in targeted annual savings.
+                            Led the contract negotiation and rapid replacement of a legacy e-billing and management system in 100 days contractually, executing a significant timeline compression to unlock $5.0M in targeted annual savings.
                         </p>
-                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-[10px]">
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Brightflag</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">NetSuite</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Zip P2P</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Symphony</span>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Vendor Sourcing</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Contract Negotiation</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">XFN Migration</span>
                         </div>
                     </div>
-                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between font-mono text-xs">
-                        <span class="text-tech-textMuted">$5.0M SPEND TARGET</span>
-                        <button onclick="openModal('modal-brightflag')" class="text-tech-accent group-hover:underline font-bold flex items-center space-x-1">
-                            <span>LAUNCH_DOC</span>
+                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between text-xs font-semibold">
+                        <span class="text-tech-textMuted">$5.0M Spend Target</span>
+                        <button onclick="openModal('modal-brightflag')" class="text-tech-accent group-hover:underline flex items-center space-x-1">
+                            <span>Read Case Study</span>
                             <span>&rarr;</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Case Study 3 (Data / Platform) -->
-                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/50 transition-all duration-300" data-category="data platform">
+                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/40 transition-all duration-300" data-category="data platform">
                     <div>
-                        <div class="flex items-center justify-between font-mono text-xs text-tech-textMuted mb-4">
-                            <span>[ DATA PLATFORMS ]</span>
-                            <span class="text-tech-accent">CORE_COMPETENCY</span>
+                        <div class="flex items-center justify-between text-xs text-tech-textMuted mb-4">
+                            <span class="uppercase tracking-wider font-medium">Database Solutions</span>
+                            <span class="text-tech-accent font-semibold">Infrastructure</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-tech-accent transition-colors duration-300">Federated Customer Search Platform</h3>
+                        <h3 class="text-lg font-bold text-white group-hover:text-tech-accent transition-colors duration-300">Universal Customer Search Platform</h3>
                         <p class="text-sm text-tech-textMuted mt-3 line-clamp-3">
-                            Spearheaded the unified requirements blueprint to build an access-controlled, federated customer search engine, consolidating 14 disparate tools into one platform. Saved 1,000+ hours in year one.
+                            Spearheaded the unified requirements to build an access-controlled, universal customer search engine, consolidating 14 disparate tools into one platform. Saved 1,000+ hours in year one.
                         </p>
-                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-[10px]">
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Compliance Platform</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Snowflake</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Looker</span>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Tool Consolidation</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Requirements Design</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Snowflake</span>
                         </div>
                     </div>
-                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between font-mono text-xs">
-                        <span class="text-tech-textMuted">CONSOLIDATED 14 TOOLS</span>
-                        <button onclick="openModal('modal-customer-search')" class="text-tech-accent group-hover:underline font-bold flex items-center space-x-1">
-                            <span>LAUNCH_DOC</span>
+                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between text-xs font-semibold">
+                        <span class="text-tech-textMuted">14 Legacy Tools Consolidated</span>
+                        <button onclick="openModal('modal-customer-search')" class="text-tech-accent group-hover:underline flex items-center space-x-1">
+                            <span>Read Case Study</span>
                             <span>&rarr;</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Case Study 4 (AI) -->
-                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/50 transition-all duration-300" data-category="ai">
+                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/40 transition-all duration-300" data-category="ai">
                     <div>
-                        <div class="flex items-center justify-between font-mono text-xs text-tech-textMuted mb-4">
-                            <span>[ COMMERCIAL AI ]</span>
-                            <span class="text-tech-accent">HIGH_LEVERAGE</span>
+                        <div class="flex items-center justify-between text-xs text-tech-textMuted mb-4">
+                            <span class="uppercase tracking-wider font-medium">AI Procurement</span>
+                            <span class="text-tech-accent font-semibold">Evaluation</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-tech-accent transition-colors duration-300">AI Redlining for High-Volume Contracts</h3>
+                        <h3 class="text-lg font-bold text-white group-hover:text-tech-accent transition-colors duration-300">AI Redlining for High-Volume Contracts</h3>
                         <p class="text-sm text-tech-textMuted mt-3 line-clamp-3">
-                            Directing a multi-vendor AI redlining evaluation. Designed a rigorous "Gold Standard Test" benchmark methodology with 6 vendors, narrowing to 2 parallel POCs to support a 71% YoY institutional growth mandate.
+                            Directing a multi-vendor AI evaluation. Designed a rigorous "Gold Standard Test" benchmark methodology with 6 vendors, narrowing to 2 parallel pilots to support a 70% YoY organizational growth mandate.
                         </p>
-                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-[10px]">
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">GC AI</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Ivo</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Ironclad</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">A/B Testing</span>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Benchmark Design</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Resource Sourcing</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">A/B Testing</span>
                         </div>
                     </div>
-                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between font-mono text-xs">
-                        <span class="text-tech-textMuted">660-1,300 ATTNY HRS SAVED</span>
-                        <button onclick="openModal('modal-ai-redlining')" class="text-tech-accent group-hover:underline font-bold flex items-center space-x-1">
-                            <span>LAUNCH_DOC</span>
+                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between text-xs font-semibold">
+                        <span class="text-tech-textMuted">660-1,300 Hours Projected Savings</span>
+                        <button onclick="openModal('modal-ai-redlining')" class="text-tech-accent group-hover:underline flex items-center space-x-1">
+                            <span>Read Case Study</span>
                             <span>&rarr;</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Case Study 5 (Data) -->
-                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/50 transition-all duration-300" data-category="data">
+                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/40 transition-all duration-300" data-category="data">
                     <div>
-                        <div class="flex items-center justify-between font-mono text-xs text-tech-textMuted mb-4">
-                            <span>[ ANALYTICS STACK ]</span>
-                            <span class="text-tech-accent">INFRASTRUCTURE</span>
+                        <div class="flex items-center justify-between text-xs text-tech-textMuted mb-4">
+                            <span class="uppercase tracking-wider font-medium">Data & Metrics</span>
+                            <span class="text-tech-accent font-semibold">Analytics</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-tech-accent transition-colors duration-300">Snowflake & Looker for Enterprise Ops</h3>
+                        <h3 class="text-lg font-bold text-white group-hover:text-tech-accent transition-colors duration-300">Dashboarding (Snowflake & Looker)</h3>
                         <p class="text-sm text-tech-textMuted mt-3 line-clamp-3">
-                            Built three production dashboards unearthing critical metrics. Unified legal operations datasets in Snowflake to transition high-value spending and performance loops from anecdote-driven to 100% data-driven.
+                            Built production dashboards unearthing critical process health and impact metrics. Unified operational datasets in Snowflake to drive data driven spending and performance loops.
                         </p>
-                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-[10px]">
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Snowflake</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Looker</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">LookML</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">ETL Mapping</span>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Snowflake</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Looker</span>
                         </div>
                     </div>
-                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between font-mono text-xs">
-                        <span class="text-tech-textMuted">3 PRODUCTION DASHBOARDS</span>
-                        <button onclick="openModal('modal-data-stack')" class="text-tech-accent group-hover:underline font-bold flex items-center space-x-1">
-                            <span>LAUNCH_DOC</span>
+                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between text-xs font-semibold">
+                        <span class="text-tech-textMuted">Production Dashboards</span>
+                        <button onclick="openModal('modal-data-stack')" class="text-tech-accent group-hover:underline flex items-center space-x-1">
+                            <span>Read Case Study</span>
                             <span>&rarr;</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Case Study 6 (Platform) -->
-                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/50 transition-all duration-300" data-category="platform">
+                <div class="project-card border border-tech-border bg-tech-card rounded p-6 flex flex-col justify-between group hover:border-tech-accent/40 transition-all duration-300" data-category="ai platform">
                     <div>
-                        <div class="flex items-center justify-between font-mono text-xs text-tech-textMuted mb-4">
-                            <span>[ OPERATIONS OVERHAUL ]</span>
-                            <span class="text-tech-accent">RECOVERY</span>
+                        <div class="flex items-center justify-between text-xs text-tech-textMuted mb-4">
+                            <span class="uppercase tracking-wider font-medium">Operations</span>
+                            <span class="text-tech-accent font-semibold">AI Agents</span>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-tech-accent transition-colors duration-300">Spend & Vendor Operations Overhaul</h3>
+                        <h3 class="text-lg font-bold text-white group-hover:text-tech-accent transition-colors duration-300">ThemisOS - a personal Legal Ops team</h3>
                         <p class="text-sm text-tech-textMuted mt-3 line-clamp-3">
-                            Directly executed structural recovery and optimization loops over a $30M+ annual outside spend portfolio. Recovered $660K in misallocated vendor payments and reduced ticket cycle times by 53%.
+                            Built ThemisOS - Themis (Greek goddess of law and justice) + OS (operating system) - for our XFN partners to use. Live agents live under the single router agent, each architected as a specialist with handoffs to other agents and scoped MCP tool access (some with online access, some without).
                         </p>
-                        <div class="mt-4 flex flex-wrap gap-2 font-mono text-[10px]">
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Onit</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Looker</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Jira Service Desk</span>
-                            <span class="bg-zinc-800 text-zinc-300 px-2 py-1 rounded">Process Mapping</span>
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Agent Building</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">Claude Code</span>
+                            <span class="bg-zinc-800 text-zinc-300 px-2.5 py-1 rounded">LibreChat</span>
                         </div>
                     </div>
-                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between font-mono text-xs">
-                        <span class="text-tech-textMuted">$660K RECOVERED IN CASH</span>
-                        <button onclick="openModal('modal-spend-overhaul')" class="text-tech-accent group-hover:underline font-bold flex items-center space-x-1">
-                            <span>LAUNCH_DOC</span>
+                    <div class="mt-8 pt-4 border-t border-tech-border flex items-center justify-between text-xs font-semibold">
+                        <span class="text-tech-textMuted">Built Impactful AI Agents</span>
+                        <button onclick="openModal('modal-spend-overhaul')" class="text-tech-accent group-hover:underline flex items-center space-x-1">
+                            <span>Read Case Study</span>
                             <span>&rarr;</span>
                         </button>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- System Philosophy / Axioms -->
-    <section id="philosophy" class="py-20 border-b border-tech-border bg-tech-card/10">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <p class="font-mono text-xs text-tech-accent tracking-widest">// RECURRING_CORE_LOGIC</p>
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mt-2 mb-12">Core Architectural Principles</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="border border-tech-border p-6 rounded bg-tech-bg/50">
-                    <span class="font-mono text-sm text-tech-accent font-bold">01 / INSTRUMENT BEFORE OPTIMIZING</span>
-                    <p class="text-sm text-zinc-300 mt-4 leading-relaxed">
-                        Without reliable metrics, faster execution simply compounds chaos. I prioritize mapping data schemas, designing telemetry, and establishing clear operational baselines before introducing structural changes or AI components.
-                    </p>
-                </div>
-
-                <div class="border border-tech-border p-6 rounded bg-tech-bg/50">
-                    <span class="font-mono text-sm text-tech-accent font-bold">02 / DE-RISK BY SEQUENCING RISK CLASSES</span>
-                    <p class="text-sm text-zinc-300 mt-4 leading-relaxed">
-                        In regulated, high-stakes environments, a "big bang" rollout creates critical vulnerabilities. I introduce automated routing first (low risk), structured extraction second (medium risk), and fully autonomous orchestration only after data pathways are battle-tested.
-                    </p>
-                </div>
-
-                <div class="border border-tech-border p-6 rounded bg-tech-bg/50">
-                    <span class="font-mono text-sm text-tech-accent font-bold">03 / TRUST SYSTEM-LEVEL OWNERSHIP</span>
-                    <p class="text-sm text-zinc-300 mt-4 leading-relaxed">
-                        Operating cadences, enterprise platforms, and automation loops fail when nobody owns the system end-to-end. I bridge the technical and business gap by acting as the single accountable owner on major transformations.
-                    </p>
                 </div>
 
             </div>
@@ -368,10 +326,11 @@
     </section>
 
     <!-- Professional Experience Timeline -->
+    <!-- STREAMING_CHUNK: Integrating verbatim resume bullet points into chronological experience timelines... -->
     <section id="experience" class="py-20 border-b border-tech-border">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <p class="font-mono text-xs text-tech-accent tracking-widest">// LOG_CHRONOLOGY</p>
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mt-2 mb-12">Professional Narrative</h2>
+            <p class="text-xs font-semibold text-tech-accent uppercase tracking-wider">Professional Journey</p>
+            <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl mt-1 mb-12">Work Experience</h2>
 
             <div class="relative border-l border-tech-border pl-6 space-y-12">
                 
@@ -381,16 +340,21 @@
                         <span class="h-2 w-2 rounded-full bg-white"></span>
                     </span>
                     <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                        <h3 class="text-lg font-bold text-white">Program Manager, Legal Operations & Technical Systems</h3>
-                        <span class="font-mono text-xs text-tech-accent mt-1 md:mt-0">COINBASE // REMOTE // 2020 – PRESENT</span>
+                        <h3 class="text-lg font-bold text-white">Program Manager, Legal Operations</h3>
+                        <span class="text-xs font-semibold text-tech-accent mt-1 md:mt-0">COINBASE // REMOTE // JUNE 2020 – PRESENT</span>
                     </div>
                     <p class="text-sm text-tech-textMuted mb-4">
-                        Defined and executed the 2026 technical systems roadmap to align legal and operational structures with corporate AI capabilities.
+                        Driving enterprise efficiency and technological maturity across deep systems and compliance programs.
                     </p>
-                    <ul class="text-sm text-zinc-300 space-y-2 list-disc list-inside">
-                        <li>Built and deployed complex custom AI workflows and agents using LibreChat, Workato, n8n, and custom API integrations.</li>
-                        <li>Coordinated multi-stakeholder procurement and end-to-end global implementations of Onit and Brightflag.</li>
-                        <li>Spearheaded performance frameworks, OKR tracking and dashboarding for executive-level oversight.</li>
+                    <ul class="text-sm text-zinc-300 space-y-3 list-none">
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>Strategic Planning & Vision.</strong> Defined the 2026 Legal Tech initiative roadmap, gaining team alignment on key priorities. Developed a high-level plan to transition Legal Operations to an "AI-native" model by 2027, aligned with company-wide AI maturity benchmarks.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>AI & Automation Architecture.</strong> Built and deployed custom AI workflows and agents using Glean, LibreChat, Claude Code, and n8n to automate workstreams such as legal intake, routing, request handling, and more.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>Contract Intelligence.</strong> Drove implementation of certain AI-driven redlining and markup processes; conducted extensive PoCs and UATs for specialized enterprise AI tools and dedicated redlining platforms to enhance contract lifecycle efficiency.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>Performance Management.</strong> Serve as a core pillar for leadership strategy by managing the Legal department’s OKR process, providing critical feedback and scoring to ensure initiatives remain measurable and impact-oriented.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>Tooling Adoption.</strong> Direct the implementation of enterprise-grade solutions for complex legal needs, including the migration of Corporate Legal and Litigation workflows into Jira and Asana.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>System Implementation.</strong> Led the end-to-end lifecycle, from RFP and requirements gathering to UAT and change management, for the successful global rollout of Onit and Brightflag for e-billing and matter management.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>Process Optimization.</strong> Developed and automated cross-functional intake systems, ensuring seamless legal support for high-volume internal requests.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-tech-accent">&bull;</span> <strong>Training & Enablement.</strong> Developed and led training sessions on new tooling (e.g. Onit, LibreChat) and topical presentations (e.g. AI for Legal, Legal Ops impact).</li>
                     </ul>
                 </div>
 
@@ -400,12 +364,17 @@
                         <span class="h-2 w-2 rounded-full bg-zinc-400"></span>
                     </span>
                     <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                        <h3 class="text-lg font-bold text-white">Corporate Paralegal & Operations Generalist</h3>
-                        <span class="font-mono text-xs text-tech-textMuted mt-1 md:mt-0">ATRIUM // SAN FRANCISCO // 2018 – 2020</span>
+                        <h3 class="text-lg font-bold text-white">Corporate Paralegal</h3>
+                        <span class="text-xs font-semibold text-tech-textMuted mt-1 md:mt-0">ATRIUM // SAN FRANCISCO, CA // DECEMBER 2018 – MARCH 2020</span>
                     </div>
-                    <ul class="text-sm text-zinc-300 space-y-2 list-disc list-inside">
-                        <li>Designed, populated, and managed complex internal operational workflows and structured knowledge databases for a 60-person legal cohort.</li>
-                        <li>Collaborated closely with technical product teams to conduct UAT, test, and provide feedback on internal legal tools.</li>
+                    <p class="text-sm text-tech-textMuted mb-4">
+                        Collaborated closely with technical software engineering and product teams to bridge business requirements with custom built legal tech solutions.
+                    </p>
+                    <ul class="text-sm text-zinc-300 space-y-3 list-none">
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-500">&bull;</span> <strong>Process & Knowledge Management.</strong> Built and rolled out internal knowledge databases, operational workflows, and company-wide best practices for a 60-person legal team.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-500">&bull;</span> <strong>System Implementations.</strong> Spearheaded the department-wide onboarding onto Front (project management software), developing resources, facilitating group training, and driving user adoption.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-500">&bull;</span> <strong>Product Collaboration.</strong> Partnered with technical product teams to test, refine, and facilitate demos for internal legal tools.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-500">&bull;</span> <strong>Client Work.</strong> Coordinate with clients, investors, and opposing counsel to close equity and debt financings and secondaries.</li>
                     </ul>
                 </div>
 
@@ -416,11 +385,17 @@
                     </span>
                     <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
                         <h3 class="text-lg font-bold text-white">Corporate Paralegal</h3>
-                        <span class="font-mono text-xs text-tech-textMuted mt-1 md:mt-0">KILPATRICK TOWNSEND // MENLO PARK // 2016 – 2018</span>
+                        <span class="text-xs font-semibold text-tech-textMuted mt-1 md:mt-0">KILPATRICK TOWNSEND // MENLO PARK, CA // NOVEMBER 2016 – DECEMBER 2018</span>
                     </div>
-                    <p class="text-sm text-zinc-300">
-                        Standardized cross-functional tracking processes and cloud workspaces for complex transactions, managing and mentoring junior operational staff.
+                    <p class="text-sm text-tech-textMuted mb-4">
+                        Optimized operational tracking systems, managed complex corporate transactions, and standardized team readiness procedures.
                     </p>
+                    <ul class="text-sm text-zinc-300 space-y-3 list-none">
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-600">&bull;</span> <strong>Workflow Standardization.</strong> Developed comprehensive standard operating procedures and internal handbooks to optimize team onboarding and streamline the preparation of legal agreements.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-600">&bull;</span> <strong>Tool Adoption.</strong> Drove the team's transition to cloud-based collaboration workspaces, standardizing tracking processes and increasing cross-functional visibility for complex financial transactions.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-600">&bull;</span> <strong>Team Enablement.</strong> Managed, trained, and reviewed the workflows of junior staff, establishing operational best practices for the corporate team.</li>
+                        <li class="relative pl-5"><span class="absolute left-0 text-zinc-600">&bull;</span> <strong>Client Work.</strong> Guided and educated start-up founders on company incorporations and prepared incorporation documents, service provider agreements, NDAs, board and stockholder consents, and cap tables.</li>
+                    </ul>
                 </div>
 
             </div>
@@ -428,26 +403,26 @@
     </section>
 
     <!-- Footer / Contact Section -->
-    <footer id="contact" class="py-16 bg-tech-card/20 font-mono text-xs">
+    <footer id="contact" class="py-16 bg-tech-card/20 text-xs text-tech-textMuted border-t border-tech-border">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-                <p class="text-white text-sm font-bold tracking-wider uppercase mb-1">SYSTEM CONTROLLER: TRAVIS BRICKER</p>
-                <p class="text-tech-textMuted">Open to strategic roles in TPM, Operations Architecture, & AI Program Leadership.</p>
+                <p class="text-white text-sm font-semibold uppercase mb-1">Travis Bricker</p>
+                <p class="text-tech-textMuted">Open to strategic roles in Program Management and Operations at mission oriented companies in hard and deep tech industries that will reindustrialize America.</p>
             </div>
-            <div class="flex flex-wrap gap-4 text-tech-textMuted">
+            <div class="flex flex-wrap gap-4 font-semibold">
                 <a href="mailto:trvsbricker@gmail.com" class="border border-tech-border bg-tech-bg hover:border-tech-accent hover:text-white px-4 py-2 rounded transition-colors duration-300">
-                    EMAIL
+                    Email
                 </a>
                 <a href="https://linkedin.com/in/travis-bricker/" target="_blank" class="border border-tech-border bg-tech-bg hover:border-tech-accent hover:text-white px-4 py-2 rounded transition-colors duration-300">
-                    LINKEDIN
+                    LinkedIn
                 </a>
-                <a href="#" class="border border-tech-border bg-tech-bg hover:border-tech-accent hover:text-white px-4 py-2 rounded transition-colors duration-300">
-                    RESUME_PDF
+                <a href="mailto:trvsbricker@gmail.com?subject=Resume%20Request" class="border border-tech-border bg-tech-bg hover:border-tech-accent hover:text-white px-4 py-2 rounded transition-colors duration-300">
+                    Request Resume PDF
                 </a>
             </div>
         </div>
-        <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-8 pt-8 border-t border-tech-border text-center text-tech-textMuted text-[10px]">
-            &copy; 2026 TRAVIS BRICKER // ALL SYSTEM METRICS FULLY VERIFIED.
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 mt-8 pt-8 border-t border-tech-border text-center text-[11px]">
+            &copy; 2026 Travis Bricker. All rights reserved.
         </div>
     </footer>
 
@@ -459,53 +434,53 @@
     <!-- Case Study 1 Modal: AI Platform -->
     <div id="modal-ai-platform" class="fixed inset-0 z-50 hidden bg-tech-bg/95 backdrop-blur-md overflow-y-auto p-4 sm:p-6 md:p-20">
         <div class="mx-auto max-w-4xl border border-tech-border bg-tech-card rounded p-6 md:p-10 relative">
-            <button onclick="closeModal('modal-ai-platform')" class="absolute top-6 right-6 font-mono text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-2 py-1 bg-tech-accentMuted">
-                CLOSE [ESC]
+            <button onclick="closeModal('modal-ai-platform')" class="absolute top-6 right-6 text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-3 py-1.5 bg-tech-accentMuted font-semibold">
+                Close [ESC]
             </button>
             
-            <div class="font-mono text-xs text-tech-accent mb-4">// DEEP_DIVE_TECHNICAL_DOCUMENT // CASE_01</div>
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Multi-Year AI & Workflow Platform</h2>
-            <p class="mt-2 text-zinc-400 font-mono text-xs">Role: Program Manager (Sole Tech Operations DRI) | Duration: October 2023 – Present</p>
+            <div class="text-xs font-semibold text-tech-accent mb-4 tracking-wide">Case Study 01 // Operations Automation</div>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white">Multi-Year AI & Workflow Platform</h2>
+            <p class="mt-2 text-zinc-400 text-xs">Role: Program Manager (Legal Ops DRI) | Duration: October 2023 – Present</p>
 
             <div class="mt-8 space-y-8 text-zinc-300 text-sm leading-relaxed">
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Challenge</h3>
-                    <p>Managing over 50,000 regulatory information requests per year arriving in deeply fragmented modalities (PDFs, paper mail, emails, screenshots). Triaging was highly manual, taking key SME bandwidth away from high-judgment decisions, leading to severe operational risks in case processing speed and accuracy.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Operational Challenge</h3>
+                    <p>Our org managed over 30,000 regulatory information requests per year coming in via highly fragmented channels (PDFs, paper mail, emails, screenshots). Triaging was entirely manual, taking critical SMEs bandwidth away from high-judgment issues. This manual drag led to severe operational bottleneck risks in overall speed and accuracy.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Phased Architecture & Execution</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 font-mono text-xs">
-                        <div class="border border-tech-border p-3 rounded">
-                            <span class="text-tech-accent">PHASE 1: Orchestration Foundation</span>
-                            <p class="text-zinc-400 mt-1">Stood up Workato as the enterprise integration layer, connecting 27 platform connectors (IT, Security, Privacy paths). Proof of deterministic scale before implementing AI.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Phased Roadmap & Execution Strategy</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4 text-xs">
+                        <div class="border border-tech-border p-4 rounded bg-tech-bg/30">
+                            <span class="text-tech-accent font-semibold block mb-1">Phase 1: Build the Foundation</span>
+                            <p class="text-zinc-400">Deployed Workato as our enterprise integration middleware, connecting 27 secure platform pathways. This proved our deterministic automation was reliable before introducing the variable logic of AI (which was still very early at the time).</p>
                         </div>
-                        <div class="border border-tech-border p-3 rounded">
-                            <span class="text-tech-accent">PHASE 2: AI-Assisted Routing</span>
-                            <p class="text-zinc-400 mt-1">Interlinked custom LLM gateways directly on the email intake queue to parse, categorize, and route to 17 downstream desks with a unique one-click human feedback loop.</p>
+                        <div class="border border-tech-border p-4 rounded bg-tech-bg/30">
+                            <span class="text-tech-accent font-semibold block mb-1">Phase 2: Intelligent Routing</span>
+                            <p class="text-zinc-400">Integrated internal LLM gateways on the intake queue to parse, categorize, and auto-route requests to 17 downstream desks. I designed a human-in-the-loop feedback button to ensure continuous accuracy tracking.</p>
                         </div>
-                        <div class="border border-tech-border p-3 rounded">
-                            <span class="text-tech-accent">PHASE 3: Deterministic AI Workflow</span>
-                            <p class="text-zinc-400 mt-1">Engineered a highly stable, prompt-chained, and parameterized extraction workflow for high-volume subpoenas to automate data retrieval directly against databases.</p>
+                        <div class="border border-tech-border p-4 rounded bg-tech-bg/30">
+                            <span class="text-tech-accent font-semibold block mb-1">Phase 3: Automated Processing</span>
+                            <p class="text-zinc-400">Engineered a prompt-chained, parameterized extraction workflow for high-volume third party requests to automate data retrieval directly against secure data environments, complete with audit trail logs.</p>
                         </div>
-                        <div class="border border-tech-border p-3 rounded">
-                            <span class="text-tech-accent">PHASE 4: Agentic Universal Intake</span>
-                            <p class="text-zinc-400 mt-1">Pivoted to a central platform MCP server fronting an agentic workflow to dynamically select playbooks and tools in real time during NYC technical surge.</p>
+                        <div class="border border-tech-border p-4 rounded bg-tech-bg/30">
+                            <span class="text-tech-accent font-semibold block mb-1">Phase 4: Agentic Framework</span>
+                            <p class="text-zinc-400">Partnered directly with an engineering group to build an universal intake engine that puts this process into the rest of our AI ecosystem, to allow end users to build mroe custom tailed workflows for themselves.</p>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Key Strategic Decisions & Tradeoffs</h3>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Key Strategic Decisions & Tradeoffs</h3>
                     <ul class="list-disc list-inside space-y-2">
-                        <li><strong>Built vs. Bought Middleware:</strong> Evaluated MuleSoft and Workato. Selected Workato to minimize custom code and long-term tech debt, allocating engineering hours entirely to custom AI agents rather than integration pipe maintenance.</li>
-                        <li><strong>De-risked via Sequence:</strong> Chose to establish deterministic routing capabilities before deploying AI extraction modules. This strategy allowed operational teams to build confidence in the foundational automation framework.</li>
+                        <li><strong>Middleware Procurement:</strong> Selected Workato over a solution that was more tailored for legal to minimize maintenance, technical debt, and budget impact, allowing our lean team to focus on our core work.</li>
+                        <li><strong>Safe Sequence:</strong> Implementing stable and auditable routing paths before deploying data extraction modules. This allowed operational partners to build full trust in the automated framework sequentially.</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Impact</h3>
-                    <p class="text-tech-accent font-bold">~1,600 hours saved already in production phases, with a verified roadmap driving over 5,750 hours saved annually across 8 stakeholder organizations.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Long-term Impact</h3>
+                    <p class="text-tech-accent font-semibold">Over 1,600 hours saved in production to date, with a verified roadmap driving over 5,750 hours of annual staff recovery across 8 separate stakeholder business units.</p>
                 </div>
             </div>
         </div>
@@ -514,31 +489,31 @@
     <!-- Case Study 2 Modal: Brightflag -->
     <div id="modal-brightflag" class="fixed inset-0 z-50 hidden bg-tech-bg/95 backdrop-blur-md overflow-y-auto p-4 sm:p-6 md:p-20">
         <div class="mx-auto max-w-4xl border border-tech-border bg-tech-card rounded p-6 md:p-10 relative">
-            <button onclick="closeModal('modal-brightflag')" class="absolute top-6 right-6 font-mono text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-2 py-1 bg-tech-accentMuted">
-                CLOSE [ESC]
+            <button onclick="closeModal('modal-brightflag')" class="absolute top-6 right-6 text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-3 py-1.5 bg-tech-accentMuted font-semibold">
+                Close [ESC]
             </button>
             
-            <div class="font-mono text-xs text-tech-accent mb-4">// DEEP_DIVE_TECHNICAL_DOCUMENT // CASE_02</div>
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">100-Day Enterprise Platform Replacement</h2>
-            <p class="mt-2 text-zinc-400 font-mono text-xs">Role: Sole PM & DRI | Duration: Dec 2025 – May 28, 2026 (Go-Live)</p>
+            <div class="text-xs font-semibold text-tech-accent mb-4 tracking-wide">Case Study 02 // Enterprise Software</div>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white">100-Day Enterprise Platform Replacement</h2>
+            <p class="mt-2 text-zinc-400 text-xs">Role: Sole PM & DRI | Duration: Feb 2026 – May 2026 (Go-Live)</p>
 
             <div class="mt-8 space-y-8 text-zinc-300 text-sm leading-relaxed">
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Problem</h3>
-                    <p>The incumbent e-billing and platform engine (Onit) failed to deliver accurate automated AI invoice parsing. This friction caused mounting maintenance costs, and severely limited spend-remediation workflows, creating a direct multi-million-dollar loss trajectory on outside legal spend.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Problem</h3>
+                    <p>The incumbent spend management system failed to deliver on basic processes, such as invoice review and accruals intake. This friction caused mounting vendor maintenance costs, and severely limited our spend-remediation workflows, creating a direct multi-million-dollar impact.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Execution Strategy</h3>
-                    <p>I authored the business case (P/PS) recommending early contract termination of the legacy system and immediate migration to Brightflag. To mitigate extreme schedule risk, I built and negotiated a <strong>contractually-enforceable 100-day implementation schedule</strong> detailing penalties and bonuses aligned to technical milestones.</p>
-                    <p class="mt-2">I managed a matrix of 10+ internal departments and co-led integration sprints for Okta, NetSuite, Symphony, and Snowflake data syncs. When a downstream ERP database sync risked delaying go-live, I ran a rapid cost-benefit triage to temporarily descope the integration to a fast-follow, protecting the critical path timeline.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Execution Strategy</h3>
+                    <p>I authored the business case recommending the early contract termination of the legacy system and immediate migration to Brightflag. To mitigate extreme schedule risk, I built and negotiated a <strong>contractually-enforceable 100-day implementation schedule</strong> detailing penalties and bonuses aligned to technical milestones.</p>
+                    <p class="mt-2">I managed a matrix of 10+ internal departments and co-led integration sprints for Okta, NetSuite, and Snowflake data syncs.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Impact</h3>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Direct Outcomes</h3>
                     <ul class="list-disc list-inside space-y-2">
                         <li><strong>60% Timeline Compression:</strong> Successfully built and shipped the replacement platform in exactly 100 days (vs. the 250+ days required to build the original legacy system).</li>
-                        <li><strong>$5M Target Realized:</strong> Positioned the platform to capture and enforce automatic AI invoice guidelines, pacing to recoup $5M in annual vendor spend leakage.</li>
+                        <li><strong>$5M Target to be Realized:</strong> Positioned the platform to capture and enforce automatic AI invoice guidelines, pacing to recoup $5M in annual vendor spend leakage.</li>
                     </ul>
                 </div>
             </div>
@@ -548,29 +523,29 @@
     <!-- Case Study 3 Modal: Customer Search -->
     <div id="modal-customer-search" class="fixed inset-0 z-50 hidden bg-tech-bg/95 backdrop-blur-md overflow-y-auto p-4 sm:p-6 md:p-20">
         <div class="mx-auto max-w-4xl border border-tech-border bg-tech-card rounded p-6 md:p-10 relative">
-            <button onclick="closeModal('modal-customer-search')" class="absolute top-6 right-6 font-mono text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-2 py-1 bg-tech-accentMuted">
-                CLOSE [ESC]
+            <button onclick="closeModal('modal-customer-search')" class="absolute top-6 right-6 text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-3 py-1.5 bg-tech-accentMuted font-semibold">
+                Close [ESC]
             </button>
             
-            <div class="font-mono text-xs text-tech-accent mb-4">// DEEP_DIVE_TECHNICAL_DOCUMENT // CASE_03</div>
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Federated Customer Search Platform</h2>
-            <p class="mt-2 text-zinc-400 font-mono text-xs">Role: Platform Program Lead | Duration: Dec 2023 – Present</p>
+            <div class="text-xs font-semibold text-tech-accent mb-4 tracking-wide">Case Study 03 // Database Solutions</div>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white">Federated Customer Search Platform</h2>
+            <p class="mt-2 text-zinc-400 text-xs">Role: Platform Program Lead | Duration: 2023 – 2024</p>
 
             <div class="mt-8 space-y-8 text-zinc-300 text-sm leading-relaxed">
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Challenge</h3>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Challenge</h3>
                     <p>Executing high-volume customer records requests required internal analysts to navigate 14+ siloed administrative search tools and legacy databases. Search pipelines averaged 15 minutes per query, suffered from strict case-sensitivity errors, and lacked consolidated user data compliance controls.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Approach & Technical Decisions</h3>
-                    <p>Rather than designing a costly standalone legal application, I reframed the business requirement from "a dedicated legal tool" to a "unified platform data primitive." I partnered directly with the Engineering team to construct the federated search engine on top of their existing robust Compliance Risk Platform.</p>
-                    <p class="mt-2">I authored the technical requirements and P/PS document to drive alignment across Compliance, Security, Data, and Legal. The platform normalized multiple irregular inputs (DOB, partial tax IDs, transaction hashes, wallet addresses) into an access-controlled, ranked-result user interface.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Approach & Strategic Decisions</h3>
+                    <p>I partnered directly with the data engineering team to construct the search engine and interface on top of their existing robust compliance platform.</p>
+                    <p class="mt-2">I authored the requirements and strategy documents to drive alignment across Compliance, Security, Data, and Legal. The platform normalized multiple irregular inputs (dates, partial identifiers, transaction hashes) into an access-controlled, ranked-result user interface.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Impact</h3>
-                    <p class="text-tech-accent font-bold">Consolidated 14+ disparate admin legacy databases into a single interface. Saved over 1,000 engineering/SME hours within the first 12 months of deployment.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Impact</h3>
+                    <p class="text-tech-accent font-bold">Consolidated 14+ disparate administrative databases into a single clean interface. Saved over 1,000 internal team hours within the first 12 months of deployment.</p>
                 </div>
             </div>
         </div>
@@ -579,29 +554,29 @@
     <!-- Case Study 4 Modal: AI Redlining -->
     <div id="modal-ai-redlining" class="fixed inset-0 z-50 hidden bg-tech-bg/95 backdrop-blur-md overflow-y-auto p-4 sm:p-6 md:p-20">
         <div class="mx-auto max-w-4xl border border-tech-border bg-tech-card rounded p-6 md:p-10 relative">
-            <button onclick="closeModal('modal-ai-redlining')" class="absolute top-6 right-6 font-mono text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-2 py-1 bg-tech-accentMuted">
-                CLOSE [ESC]
+            <button onclick="closeModal('modal-ai-redlining')" class="absolute top-6 right-6 text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-3 py-1.5 bg-tech-accentMuted font-semibold">
+                Close [ESC]
             </button>
             
-            <div class="font-mono text-xs text-tech-accent mb-4">// DEEP_DIVE_TECHNICAL_DOCUMENT // CASE_04</div>
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">AI Redlining for High-Volume Contracts</h2>
-            <p class="mt-2 text-zinc-400 font-mono text-xs">Role: Program DRI | Duration: Oct 2025 – Present</p>
+            <div class="text-xs font-semibold text-tech-accent mb-4 tracking-wide">Case Study 04 // AI Procurement</div>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white">AI Redlining for High-Volume Contracts</h2>
+            <p class="mt-2 text-zinc-400 text-xs">Role: Program DRI | Duration: Jan 2026 – Present</p>
 
             <div class="mt-8 space-y-8 text-zinc-300 text-sm leading-relaxed">
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Capacity Problem</h3>
-                    <p>Our organization faced an ambitious 71% YoY institutional growth mandate with a strictly capped, flat legal team headcount. High-judgment commercial agreements required intensive mechanical, line-by-line comparison reviews. Prior attempts using in-house tooling failed because models continually replaced whole paragraphs rather than executing tracked-change, word-level surgical edits.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Capacity Problem</h3>
+                    <p>Our organization faced an ambitious 70% expected growth in contracts to review with a strictly capped, flat internal team headcount. High-judgment commercial agreements required intensive mechanical, line-by-line comparison reviews. Prior attempts using general in-house tools failed because models continually replaced whole paragraphs rather than executing tracked-change, word-level surgical edits.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Solution</h3>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Solution</h3>
                     <p>I structured this as an operational resource and tool vetting challenge. I wrote the detailed job specifications, hired, and now direct an AI Legal Ops Contractor to serve as my primary technical resource on the build.</p>
-                    <p class="mt-2">To bypass marketing demos, I engineered a **"Gold Standard Test"** benchmark: I anonymized a live contract and playbooks, ran 10 counterparty drafts against 6 vendor models, and blindly graded their output against our legal experts' actual negotiation edits. We killed our in-house tool pilot publicly due to programmatic limits, and selected 2 vendor finalists (Ivo & GC AI) for parallel in-production sandboxes.</p>
+                    <p class="mt-2">To bypass marketing demos, I engineered a **"Gold Standard Test"** benchmark: I anonymized a live contract and playbooks, ran 10 counterparty drafts against 6 vendor models, and blindly graded their output against our legal experts' actual negotiation edits. We killed our initial pilot due to the discovered limits, and selected 2 vendor finalists for parallel in-production sandboxes.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Projected Impact</h3>
-                    <p class="text-tech-accent font-bold">Targeting 660 to 1,300 attorney hours saved annually. Secured $61K in immediate operational hiring savings by sourcing a highly qualified technical resource under budgeted scope.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Projected Impact</h3>
+                    <p class="text-tech-accent font-bold font-semibold">Targeting 1000+ professional staff hours saved annually. Also secured $61K in immediate operational hiring savings by sourcing a highly qualified specialist resource under budgeted scope.</p>
                 </div>
             </div>
         </div>
@@ -610,68 +585,69 @@
     <!-- Case Study 5 Modal: Snowflake & Looker -->
     <div id="modal-data-stack" class="fixed inset-0 z-50 hidden bg-tech-bg/95 backdrop-blur-md overflow-y-auto p-4 sm:p-6 md:p-20">
         <div class="mx-auto max-w-4xl border border-tech-border bg-tech-card rounded p-6 md:p-10 relative">
-            <button onclick="closeModal('modal-data-stack')" class="absolute top-6 right-6 font-mono text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-2 py-1 bg-tech-accentMuted">
-                CLOSE [ESC]
+            <button onclick="closeModal('modal-data-stack')" class="absolute top-6 right-6 text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-3 py-1.5 bg-tech-accentMuted font-semibold">
+                Close [ESC]
             </button>
             
-            <div class="font-mono text-xs text-tech-accent mb-4">// DEEP_DIVE_TECHNICAL_DOCUMENT // CASE_05</div>
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Snowflake & Looker for Enterprise Ops</h2>
-            <p class="mt-2 text-zinc-400 font-mono text-xs">Role: Systems DRI & Dashboard Architect | Duration: 2024 – Present</p>
+            <div class="text-xs font-semibold text-tech-accent mb-4 tracking-wide">Case Study 05 // Data & Metrics</div>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white">Analytics Infrastructure (Snowflake & Looker)</h2>
+            <p class="mt-2 text-zinc-400 text-xs">Role: DRI & Dashboard Builder | Duration: 2024 – Present</p>
 
             <div class="mt-8 space-y-8 text-zinc-300 text-sm leading-relaxed">
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Landscape</h3>
-                    <p>Despite managing over $30M in annual external services across multiple operational channels, senior executives had no consolidated, real-time analytics layer. Data on invoice cycle times, operational bottlenecks, vendor concentrations, and program performance was manual and anecdotal.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Operational Landscape</h3>
+                    <p>Despite managing $$$ (millions) in annual external services across multiple operational channels, legal leadership had no consolidated data on invoice cycle times, operational bottlenecks, vendor concentrations, or general spend metrics for their teams.</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Engineering the Stack</h3>
-                    <p>I defined and led the unified data ingestion requirements, partnering with IT to land diverse platform data directly inside Snowflake. I collaborated with Data Engineering to map and model the schema joins, then **personally built three responsive production dashboards in Looker** using modular LookML blocks:</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Designing the Stack</h3>
+                    <p>I defined and led the data requirements, partnering with Data Engineering to land the spend platform data directly inside Snowflake. Data Eng mapped and modeled the schema joins, then ** I personally designed and configured the production dashboards in Looker**. These included:</p>
                     <ul class="list-disc list-inside space-y-2 mt-2">
-                        <li><strong>Onit Health:</strong> Tracked operational metrics, invoicing errors, and automated routing health.</li>
-                        <li><strong>CLO Executive Dashboard:</strong> Surfaced high-level spend analysis and resource allocations.</li>
-                        <li><strong>Litigation Suite:</strong> Provided case teams with matter pipelines and budget variances.</li>
+                        <li><strong>Platform Health Dashboard:</strong> Tracked operational metrics, invoicing errors, and automated routing health.</li>
+                        <li><strong>CLO Dashboard:</strong> Surfaced high-level spend analysis and vendor concentration metrics.</li>
+                        <li><strong>Team Specific Suite:</strong> Provided department heads with their matter level spend in real time.</li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ The Outcome</h3>
-                    <p class="text-tech-accent font-bold">Successfully replaced opinion-driven decision-making with objective data pipelines. This dataset became the foundational baseline that proved the $5.0M business case for the subsequent Brightflag platform migration.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">The Outcome</h3>
+                    <p class="text-tech-accent font-bold font-semibold">Successfully replaced opinion-driven decision-making with objective, clean data pipelines. This dataset became the foundational baseline that proved the $5.0M business case for the subsequent Brightflag platform migration.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Case Study 6 Modal: Spend Overhaul -->
+    <!-- Case Study 6 Modal: ThemisOS -->
     <div id="modal-spend-overhaul" class="fixed inset-0 z-50 hidden bg-tech-bg/95 backdrop-blur-md overflow-y-auto p-4 sm:p-6 md:p-20">
         <div class="mx-auto max-w-4xl border border-tech-border bg-tech-card rounded p-6 md:p-10 relative">
-            <button onclick="closeModal('modal-spend-overhaul')" class="absolute top-6 right-6 font-mono text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-2 py-1 bg-tech-accentMuted">
-                CLOSE [ESC]
+            <button onclick="closeModal('modal-spend-overhaul')" class="absolute top-6 right-6 text-xs text-tech-accent hover:text-white border border-tech-accent/40 rounded px-3 py-1.5 bg-tech-accentMuted font-semibold">
+                Close [ESC]
             </button>
             
-            <div class="font-mono text-xs text-tech-accent mb-4">// DEEP_DIVE_TECHNICAL_DOCUMENT // CASE_06</div>
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Spend & Vendor Operations Overhaul</h2>
-            <p class="mt-2 text-zinc-400 font-mono text-xs">Role: Sole Program PM & DRI | Duration: 2024 – 2025</p>
+            <div class="text-xs font-semibold text-tech-accent mb-4 tracking-wide">Case Study 06 // AI Agents</div>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white">Build and Deploy ThemisOS</h2>
+            <p class="mt-2 text-zinc-400 text-xs">Role: Sole PM & DRI | Duration: 2026 – Present</p>
 
             <div class="mt-8 space-y-8 text-zinc-300 text-sm leading-relaxed">
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Operational Context</h3>
-                    <p>Our newly implemented platforms were capturing transactional logs, but the actual vendor workflows remained unoptimized and prone to leakage. Critical invoice processing delays, accrual anomalies with Corporate Finance, and backlog tickets in Jira were slowing down support for key operational teams.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Operational Context</h3>
+                    <p>ThemisOS is my personally-branded suite of LibreChat agents for Legal — Themis (Greek goddess of law and justice) + OS (operating system). I branded this as "your personal legal ops team"</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Corrective Actions Taken</h3>
-                    <p>I mapped our complete invoice lifecycle, identified heavy manual touchpoints, and redesigned the API-driven routing. I transformed background noise into a structured <strong>"Invoice Remediation Program."</strong> Partnering closely with Finance, I established a clear feedback cadence with 60+ external vendors to identify, isolate, and target billing errors.</p>
-                    <p class="mt-2">When a key team member departed, I absorbed full critical ticket queue coverage, maintaining system uptime and response rates while continuing to advance my primary portfolio targets.</p>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Agent Set Up</h3>
+                    <p>Five agents live under the ThemisOS banner today, each architected as a specialist with handoffs to other agents and scoped MCP tool access (some with online access, some without). This was a purposeful design choice that improves accuracy and reduces token usage versus a monolithic generalist agent.</p>
+                    <p class="mt-2"> Live with the Legal Ops team today, expanding to the full Legal organization this week — timed deliberately to support end-user onboarding to Brightflag</p>
                 </div>
 
                 <div>
-                    <h3 class="font-mono text-xs text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">/ Hard Quantifiable Success</h3>
-                    <ul class="list-disc list-inside space-y-2 font-mono text-xs text-zinc-300">
-                        <li><span class="text-tech-accent">$660,000.00</span> recovered directly in misallocated or stuck invoice leakage.</li>
-                        <li><span class="text-tech-accent">34%</span> reduction in baseline invoice review durations.</li>
-                        <li><span class="text-tech-accent">71%</span> drop in stuck in-flight invoices.</li>
-                        <li><span class="text-tech-accent">53%</span> faster Jira support ticket completion.</li>
+                    <h3 class="text-xs font-semibold text-white uppercase tracking-wider border-b border-tech-border pb-1 mb-2">Five Agents</h3>
+                    <ul class="list-disc list-inside space-y-2 text-zinc-300">
+                        <li><span class="text-tech-accent font-semibold">Head Agent</span> routes request to relevant agent</li>
+                        <li><span class="text-tech-accent font-semibold">Ironclad Agent</span> answers questions about ironclad and evisort.</li>
+                        <li><span class="text-tech-accent font-semibold">Outside Counsel Spend Agent</span> retrieves invoices, budget, and matter info.</li>
+                        <li><span class="text-tech-accent font-semibold">Spend & Vendor Management Process Agent</span> helps user naviagte through matter and vendor management processes.</li>
+                        <li><span class="text-tech-accent font-semibold">Spend & Vendor Jira Agent</span> assists legal ops with faster Jira support ticket completion.</li>
                     </ul>
                 </div>
             </div>
